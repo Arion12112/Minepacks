@@ -61,7 +61,7 @@ FullInventory:
 # Database settings
 Database:
   # Database type. MySQL, SQLite, Files (data is stored in files, one file per user) or Shared (use shared connection pool from PCGF PluginLib)
-  Type: SQLite
+  Type: MySQL
   # Auto database cleanup settings
   AutoCleanup:
     # Defines the max amount of days backpacks will be stored. -1 to disable auto cleanup
@@ -75,10 +75,10 @@ Database:
   UUID_Type: auto
   # Settings only for MySQL
   SQL:
-    Host: "localhost:3306"
-    Database: "minecraft"
-    User: "minecraft"
-    Password: "minecraft"
+    Host: "161.117.249.100:3306"
+    Database: "s251_minecraftplus"
+    User: "u251_U4QeEVkYMw"
+    Password: "pL23bh11V53^3a^7uI55CJpY"
     # The max amount of connections to the database the connection pool will open
     MaxConnections: 2
     # Sets the max lifetime of the connection in seconds. -1 = Default (30min)
@@ -87,7 +87,7 @@ Database:
     IdleTimeout: -1
     # List of properties for your SQL connection. Can be used to disable SSL.
     # Properties: ["useSSL=false"]
-    Properties: []
+    Properties: ["useSSL=false"]
   # Tables settings for shared tables when using MySQL - Advanced MySQL Settings
   # Use these settings only if you know what you are doing!!!!
   # Do only change these settings if you know what you are doing and have some basic MySQL knowledge!!!
